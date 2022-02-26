@@ -1,5 +1,5 @@
 package methods;
-
+//method overloading
 public class OverloadMethod {
 	public void area(int b,int h)
     {
