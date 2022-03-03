@@ -26,7 +26,7 @@ package filehandling;
             fw1.write(data);
             
             System.out.println("Done"); 
-            
+         
             fr.close();
             fw.close();
             fw1.close();
