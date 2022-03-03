@@ -7,14 +7,14 @@ package filehandling;
 
 		public static void main(String[] args) throws Exception{
 			
-			FileReader fr = new FileReader("C://Users//poorv//Desktop//file//readme.txt");
+			FileReader fr = new FileReader("C://Users//poorv//Desktop//file//readme.txt"); //path here is your folder path where your text file is saved.e(c://foldername//filename.txt)
 			int i;    
 	        while((i=fr.read())!=-1) //EOF
 	        System.out.print((char)i); 
 	       
 	        
 	        String text = "Hello Welcome To Java";  
-			FileWriter fw = new FileWriter("C://Users//poorv//Desktop//file//writehere.txt");
+			FileWriter fw = new FileWriter("C://Users//poorv//Desktop//file//writehere.txt"); //path here is your folder path i.e(c://foldername//filename.txt)
 			fw.write(text); 
             System.out.println("\n"+text); 
             System.out.println("File is created");
