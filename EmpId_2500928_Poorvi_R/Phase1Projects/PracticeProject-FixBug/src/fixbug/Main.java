@@ -94,8 +94,8 @@ public class Main{
         System.out.println("Enter the expense you need to search:\t");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        boolean ans = arrayList.contains(n);
-          if (ans)
+        boolean arr = arrayList.contains(n);
+          if (arr == true)
         System.out.println("The list contains the expense");
         else
        System.out.println("The list does not contains the expense");
@@ -103,7 +103,7 @@ public class Main{
        
     }
     private static void sortExpenses(ArrayList<Integer> arrayList) {
-        int arrlen =  arrayList.size();
+        int arrlen=  arrayList.size();
         Collections.sort(arrayList);
         System.out.println("Sorted in ascending order "+ arrayList);
        
