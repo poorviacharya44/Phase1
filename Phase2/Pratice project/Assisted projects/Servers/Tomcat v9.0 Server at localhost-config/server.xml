@@ -17,7 +17,7 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
- --><Server port="9292" shutdown="SHUTDOWN">
+ --><Server port="8181" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="9191" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ServletGetPost" path="/ServletGetPost" reloadable="true" source="org.eclipse.jst.jee.server:ServletGetPost"/><Context docBase="FirstServlet" path="/FirstServlet" reloadable="true" source="org.eclipse.jst.jee.server:FirstServlet"/><Context docBase="ServletConcept" path="/ServletConcept" reloadable="true" source="org.eclipse.jst.jee.server:ServletConcept"/><Context docBase="ServletInterfaces" path="/ServletInterfaces" reloadable="true" source="org.eclipse.jst.jee.server:ServletInterfaces"/><Context docBase="FilterDemo" path="/FilterDemo" reloadable="true" source="org.eclipse.jst.jee.server:FilterDemo"/><Context docBase="CookieTrackingDemo" path="/CookieTrackingDemo" reloadable="true" source="org.eclipse.jst.jee.server:CookieTrackingDemo"/><Context docBase="URLRewriteDemo" path="/URLRewriteDemo" reloadable="true" source="org.eclipse.jst.jee.server:URLRewriteDemo"/><Context docBase="FormFieldsTracking" path="/FormFieldsTracking" reloadable="true" source="org.eclipse.jst.jee.server:FormFieldsTracking"/><Context docBase="HTTPSessionDemo" path="/HTTPSessionDemo" reloadable="true" source="org.eclipse.jst.jee.server:HTTPSessionDemo"/><Context docBase="LoginLogout" path="/LoginLogout" reloadable="true" source="org.eclipse.jst.jee.server:LoginLogout"/><Context docBase="ValidationOfUserLogin" path="/ValidationOfUserLogin" reloadable="true" source="org.eclipse.jst.jee.server:ValidationOfUserLogin"/><Context docBase="JDBCSetup" path="/JDBCSetup" reloadable="true" source="org.eclipse.jst.jee.server:JDBCSetup"/><Context docBase="JDBCSetup2" path="/JDBCSetup2" reloadable="true" source="org.eclipse.jst.jee.server:JDBCSetup2"/><Context docBase="JDBCSetup3" path="/JDBCSetup3" reloadable="true" source="org.eclipse.jst.jee.server:JDBCSetup3"/><Context docBase="JDBCSetup4" path="/JDBCSetup4" reloadable="true" source="org.eclipse.jst.jee.server:JDBCSetup4"/><Context docBase="JDBCSetup5" path="/JDBCSetup5" reloadable="true" source="org.eclipse.jst.jee.server:JDBCSetup5"/></Host>
+      <Context docBase="ValidationOfUserLogin" path="/ValidationOfUserLogin" reloadable="true" source="org.eclipse.jst.jee.server:ValidationOfUserLogin"/></Host>
     </Engine>
   </Service>
 </Server>
