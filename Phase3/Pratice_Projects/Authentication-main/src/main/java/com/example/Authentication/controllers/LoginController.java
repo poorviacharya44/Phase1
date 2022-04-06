@@ -1,6 +1,5 @@
 package com.example.Authentication.controllers;
 
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.example.Authentication.entities.User;
 import com.example.Authentication.exceptions.UserNotFoundException;
 import com.example.Authentication.services.UserService;
-
 
 @Controller
 public class LoginController {
@@ -56,7 +54,6 @@ public class LoginController {
     	} catch (UserNotFoundException unfe) {
     		throw unfe;
     	}
-    	
     	
 
     }

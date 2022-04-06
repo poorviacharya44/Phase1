@@ -13,8 +13,6 @@ import com.example.Authentication.entities.User;
 import com.example.Authentication.exceptions.UserNotFoundException;
 import com.example.Authentication.services.UserService;
 
-
-
 @ControllerAdvice
 public class UserDNEController {
 	
