@@ -17,6 +17,7 @@ public class SportyShoesOnlineApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SportyShoesOnlineApplication.class, args);
+		System.out.println("Running...");
 		
 	}
 	
